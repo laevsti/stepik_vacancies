@@ -41,7 +41,7 @@
             <img class="mx-auto d-block" src="{{ specialties.picture }}" width="100" height="60" alt="">
             <div class="card-body">
               <p class="card-text mb-2">{{ specialties.title }}</p>
-              <p class="card-text"><a href="#">{{ specialties.vac_count }} вакансий</a></p>
+              <p class="card-text"><a href={% url 'spec_vacancies' category=specialties.code %}>{{ specialties.vac_count }} вакансий</a></p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <img class="mx-auto d-block mw-100" src="{{ company.logo }}" alt="">
             </a>
             <div class="card-body">
-              <p class="card-text"><a href="#">{{ company.vac_count}} вакансий</a></p>
+              <p class="card-text"><a href={% url 'company' comp_num=company.id %}>{{ company.vac_count}} вакансий</a></p>
             </div>
           </div>
         </div>

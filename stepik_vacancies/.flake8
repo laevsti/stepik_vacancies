@@ -1,0 +1,3 @@
+[flake8]
+max-line-length = 120
+exclude = .git,__pycache__,venv, vacancies/management/commands/run.py, vacancies/data.py, vacancies/migrations, vacancies/admin.py, vacancies/tests.py
